@@ -24,7 +24,7 @@ header {
   align-items: center;
   justify-content: space-between;
   font-size: 1rem;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   box-shadow: 2px 1px 3px #666;
 }
 
@@ -116,12 +116,6 @@ a.img{
     flex: 1 0 30%;
 }
 
-article, article-img{
-    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
-    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
-    padding: 1rem;
-}
-
 article img {
     width: 100%;
     cursor: pointer;
@@ -140,6 +134,7 @@ article img {
 
 .wrapper > div {
     flex-grow: 2;
+    overflow: auto;
 }
 
 .nav-tabs .nav-item {
@@ -239,6 +234,12 @@ a.button, a.button span, a.button svg, a.button {
 .clear-left {
     clear: left;
 }
+
+p.copyright{
+    margin: 0;
+    font-size: .75rem;
+}
+
 /* Media queries */
 @media screen and (max-width: 768px) {
     .navbar {
