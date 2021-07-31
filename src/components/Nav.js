@@ -3,6 +3,7 @@ import React from 'react';
 function Nav({ currentPage, handlePageChange }) {
   return (
     <header>
+        <div className="brand">Lindsey Lauria</div>
         <nav className="navbar navbar-dark navbar-expand-md">
             <ul className="nav nav-tabs w-100">
             <li className="nav-item">

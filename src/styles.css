@@ -85,7 +85,7 @@ a:hover, a:active, a:focus {
 footer {
     font-size: .9rem;
     margin-top: 2%;
-    text-align: right;
+    text-align: center;
     box-shadow: 2px 1px 3px #666;
 }
 
@@ -195,6 +195,7 @@ section {
 
 .contacts {
     justify-content: space-evenly;
+    max-width: 325px;
 }
 
 .contacts a.button {
@@ -227,7 +228,7 @@ a.button, a.button span, a.button svg, a.button {
 .contacts a.button span, .contacts a.button svg{
     vertical-align: middle;
     display: inline-block;
-    padding-right: 2px;
+    padding-right: 5px;
     cursor: pointer;
 }
 
@@ -240,27 +241,26 @@ p.copyright{
     font-size: .75rem;
 }
 
+.brand{
+    margin-left: 1.5rem;
+}
+
 /* Media queries */
 @media screen and (max-width: 768px) {
-    .navbar {
-        background-size: cover;
+    .brand{
+        margin: 0;
     }
 
     h1{
         font-size: 1.7rem;
     }
 
-    header, nav ul, .contacts {
+    header, nav ul, .about-content, .article-content {
         flex-direction: column;
     }
 
-    nav li {
-        text-align: center;
-        margin-top: 5px;
-    }
-
-    footer,  footer p{
-        text-align: center;
+    nav li , footer,  footer p{
+        text-align: center;  
     }
 
     section {
@@ -277,10 +277,6 @@ p.copyright{
 
     .articles article:first-child{
         padding-bottom: 0;
-    }
-
-    .about-content, .article-content {
-        flex-direction: column;
     }
 
     .about-content p, .article-content p {
@@ -313,7 +309,6 @@ p.copyright{
     }
 
     .contacts a.button {
-        margin-bottom: 2%;
         margin-right: 0;
     }
 }
