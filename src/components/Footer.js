@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-<footer className="p-3">
+<footer className="p-2">
   <article className="contacts container">
         <a className="button" href="https://www.linkedin.com/in/lindseyjjlauria/" rel="noreferrer" target="_blank">
           <span className="svg">
