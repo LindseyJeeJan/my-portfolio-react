@@ -1,10 +1,10 @@
 :root {
---white: #D6FFF6;
---black: #0E131F;
+--white: #f2e8cf;
+--black: #386641;
 --gray: #666;
---dark: #231651;
---lighter: #2EC4B6;
---contrast: #FF8484;
+--dark: #bc4749;
+--lighter: #6a994e;
+--contrast: #a7c957;
 }
 
 html {
@@ -27,8 +27,15 @@ header {
   justify-content: space-between;
   font-size: 1rem;
   margin-bottom: 1%;
-  box-shadow: 2px 1px 3px var(--gray);
-  background-color: var(--lighter);
+  box-shadow: 0 1px 5px 2px rgb(0 0 0 / 15%);
+}
+
+header {
+  background-image: linear-gradient(144deg, var(--lighter),var(--contrast)90%);
+}
+
+footer {
+  background-image: linear-gradient(104deg, var(--contrast),var(--lighter)90%);
 }
 
 header, nav ul, .article-content {
@@ -54,14 +61,14 @@ nav ul {
 
 h1, h2, h3 {
     font-weight: bold;
-    color: var(--dark);
 }
 
 h1 {
     font-size: 2rem;    
-    color: var(--gray);
+    color: var(--black);
     font-family: 'Righteous', cursive;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -75,7 +82,7 @@ h2 {
 h3 {
     font-size: 1.1rem;
     text-transform: uppercase;
-    color: var(--contrast);
+    color: var(--lighter);
 }
 
 header a {
@@ -83,14 +90,13 @@ header a {
 }
 
 a, a:hover, a:active, a:focus, a:visited {
-    text-decoration: underline;
     cursor: pointer;
     color: var(--dark);
 }
 
 a:hover, a:active, a:focus {
     transition: all 0.3s ease-in;
-    color: var(--contrast);
+    color: var(--black);
     cursor: pointer;
 }
 
@@ -98,8 +104,7 @@ footer {
     font-size: .9rem;
     margin-top: 2%;
     text-align: center;
-    box-shadow: 2px 1px 3px var(--gray);
-    background-color: var(--lighter);
+    box-shadow: 0 1px 5px 3px rgb(0 0 0 / 15%);
 }
 
 main .decorative-border:last-child {
@@ -108,6 +113,7 @@ main .decorative-border:last-child {
 
 p {
     line-height: 1.6;
+    color: var(--black);
 }
 
 article a.arrow-link {
@@ -120,17 +126,18 @@ form {
 }
 
 form button.btn {
-    background-color: var(--contrast);
+    background-color: var(--dark);
     color: var(--white);
 }
 
-form button:hover {
+form button.btn:hover {
     background-color: var(--lighter);
+    color: var(--white);
 }
 
 a.img{
     flex: 1 0 50%;
-    box-shadow: 0 0.25rem 0.75rem var(--gray);
+    box-shadow: 0 10px 12px 2px rgb(0 0 0 / 15%);
 }
 
 .articles article:first-child a.img{
@@ -162,15 +169,22 @@ article img {
     overflow: auto;
 }
 
-.nav-tabs .nav-item {
-  color: var(--dark);
+.nav-tabs .nav-item .nav-link {
+  color: var(--black);
+  border-bottom: 2px solid transparent;
+  padding: .5rem;
 }
 
 .navbar .nav-tabs .nav-item.show .nav-link, .navbar .nav-tabs .nav-link.active,
 .navbar .nav-tabs .nav-link:focus, .navbar .nav-tabs .nav-link:hover, .navbar .nav-tabs {
   background-color: transparent;
   border-color: transparent;
-  color:var(--white);
+  color:var(--dark);
+
+}
+
+.navbar .nav-tabs .nav-link.active, .navbar .nav-tabs .nav-link:hover{
+  border-bottom: 2px solid var(--dark);
 }
 
 .articles h3::after{
@@ -182,8 +196,8 @@ article img {
     margin: 0 0 30px 30px;
     width: 30%;
     height: 50%;
-    border-radius: calc(.25rem - 1px);
-    box-shadow: 0 0.25rem 0.75rem var(--gray);
+    border-radius: 2px;
+    box-shadow: 0 10px 12px 2px rgb(0 0 0 / 15%);
 }
 
 .article-content {
@@ -204,9 +218,14 @@ section {
     flex-wrap: wrap;
 }
 
+.articles article {
+    padding: 4% 1%;
+}
+
 .articles article:first-child {
     flex: 1 0 100%;
     margin-bottom: 20px;
+    padding-top: 0;
 }
 
 .articles article:nth-child(n+2) {
