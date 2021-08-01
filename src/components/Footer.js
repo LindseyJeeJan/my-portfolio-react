@@ -20,6 +20,10 @@ export default function Footer() {
           </span>
          
         </a>
+        <a className="button" href="https://stackoverflow.com/users/8016495/lindseyjj" rel="noreferrer" target="_blank">
+          <i className="fab fa-stack-overflow"></i> 
+        </a>
+      
         <a className="button" href={process.env.PUBLIC_URL + "/assets/lindseylauria-resume.pdf"} rel="noreferrer" target="_blank">
           <span className="svg">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="currentColor" className="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">

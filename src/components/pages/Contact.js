@@ -18,7 +18,7 @@ export default function Contact() {
               <label>Message</label>
               <textarea className="form-control" placeholder="Enter your message"></textarea>
             </div>
-            <div className="align-center">
+            <div>
               <button className="btn" type="submit">Submit</button>
             </div>
           </form> 

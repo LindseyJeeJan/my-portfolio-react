@@ -48,6 +48,48 @@ export default function Portfolio() {
             </a>
           </div>
         </article>
+         <article>
+          <div className="d-flex align-content-center justify-content-between">
+            <h3>Tech Blog</h3>
+            <a href="https://github.com/LindseyJeeJan/tech-blog" rel="noreferrer" target="_blank">Visit GitHub</a>
+          </div>
+          <div className="article-content">
+            <p>Provides a CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts. I built this application so that developers can publish articles, blog posts, and share thoughts and opinions on technology. This application uses NodeJS, NPM, MySQL, Express.js, Sequelize, bcrypt, and dotenv.
+              <a href="https://techtalk-tech-blog.herokuapp.com/" rel="noreferrer" target="_blank" className="arrow-link">View demo</a>
+            </p>
+              <a href="https://github.com/LindseyJeeJan/tech-blog"  rel="noreferrer"target="_blank" className="img">
+              <img src={process.env.PUBLIC_URL + "/images/tech-blog.png"} alt="tech blog project" />
+            </a>
+          </div>
+        </article>
+        <article>
+          <div className="d-flex align-content-center justify-content-between">
+            <h3>Budget Tracker</h3>
+            <a href="https://github.com/LindseyJeeJan/budget-tracker" rel="noreferrer" target="_blank">Visit GitHub</a>
+          </div>
+          <div className="article-content">
+            <p>Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success. The user will be able to add expenses and deposits to their budget with or without a connection. This application uses NPM, MongoDB, Express, Babel and Webpack.
+              <a href="https://budget-tracker-ll.herokuapp.com/" rel="noreferrer" target="_blank" className="arrow-link">View demo</a>
+            </p>
+              <a href="https://github.com/LindseyJeeJan/budget-tracker"  rel="noreferrer"target="_blank" className="img">
+              <img src={process.env.PUBLIC_URL + "/images/budget-tracker.png"} alt="budget tracker project" />
+            </a>
+          </div>
+        </article>
+         <article>
+          <div className="d-flex align-content-center justify-content-between">
+            <h3>Workout Tracker</h3>
+            <a href="https://github.com/LindseyJeeJan/workout-tracker" rel="noreferrer" target="_blank">Visit GitHub</a>
+          </div>
+          <div className="article-content">
+            <p>As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled. A consumer will reach their fitness goals more quickly when they track their workout progress. The application uses Node, NPM, Express, MongoDB, Mongoose and Heroku.
+              <a href="https://workout-tracker-ll.herokuapp.com/" rel="noreferrer" target="_blank" className="arrow-link">View demo</a>
+            </p>
+              <a href="https://github.com/LindseyJeeJan/workout-tracker"  rel="noreferrer"target="_blank" className="img">
+              <img src={process.env.PUBLIC_URL + "/images/workout-track.png"} alt="workout tracker project" />
+            </a>
+          </div>
+        </article>
       </div>
     </section>
       </div>
