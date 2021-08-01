@@ -4,7 +4,7 @@ export default function About() {
   return ( 
     <div className="main container p-3">
         <section>
-          <h1>About</h1>
+          <h1>About Me</h1>
           <article className="about-content">
            
             <div className="article-content">
