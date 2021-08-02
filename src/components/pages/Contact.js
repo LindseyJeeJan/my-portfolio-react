@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 
+import { validateEmail } from '../../utils/helpers';
+
 export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [errorEmailFormatMessage, setErrorEmailFormatMessage] = useState('');
+    const [errorEmailRequiredMessage, setErrorEmailRequiredMessage] = useState('');
+    const [errorNameRequiredMessage, setErrorNameRequiredMessage] = useState('');
 
     const handleInputChange = (e) => {
 
@@ -17,13 +22,37 @@ export default function Contact() {
       }
     };
 
+    const resetErrorMessages = _ => {
+      setErrorEmailRequiredMessage('');
+      setErrorEmailFormatMessage('');
+      setErrorNameRequiredMessage('');
+    }
+
     const handleFormSubmit = (e) => {
     e.preventDefault();
+    resetErrorMessages();
+
+    if (!email.length && !name.length) {
+        setErrorEmailRequiredMessage('Error: Email is required.');
+        setErrorNameRequiredMessage('Error: Name is required.');
+        return;
+    } else if (!email.length) {
+        setErrorEmailRequiredMessage('Error: Email is required.');
+        return;
+    } else if (!name.length && email.length && !validateEmail(email)) {
+       setErrorNameRequiredMessage('Error: Name is required.');
+       setErrorEmailFormatMessage('Error: Email format is incorrect.');
+      return;
+    } else if (email.length && !validateEmail(email)) {
+      setErrorEmailFormatMessage('Error: Email format is incorrect.');
+      return;
+    }
 
     alert(`Contact has been sent.`);
     setName('');
     setEmail('');
     setMessage('');
+    resetErrorMessages();
   };
 
   return (
@@ -42,9 +71,11 @@ export default function Contact() {
               placeholder="Enter your name" 
               className="form-control" 
               required />
-               <div class="invalid-feedback name">
-                  Error: Name is required information.
-              </div>
+              {errorNameRequiredMessage && (
+                <div>
+                  <p className="error">{errorNameRequiredMessage}</p>
+                </div>
+              )}
             </div>
             <div className="form-group">
               <label>Email address</label> 
@@ -55,14 +86,18 @@ export default function Contact() {
               type="email" 
               autoComplete="off" 
               placeholder="Enter your email address" 
-              className="form-control" 
+              className="form-control " 
               required />
-              <div class="invalid-feedback email">
-                  Error: Email is required information.
-              </div>
-               <div class="invalid-feedback email-format">
-                  Error: Email format is incorrect.
-              </div>
+              {errorEmailRequiredMessage && (
+                <div>
+                  <p className="error">{errorEmailRequiredMessage}</p>
+                </div>
+              )}
+              {errorEmailFormatMessage && (
+                <div>
+                  <p className="error">{errorEmailFormatMessage}</p>
+                </div>
+              )}
             </div>
             <div className="form-group">
               <label>Message</label>
