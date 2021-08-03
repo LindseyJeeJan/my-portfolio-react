@@ -37,8 +37,10 @@ export default function Contact() {
     resetErrorMessages();
 
 
-    if (!name.length) {
-        setErrorNameRequired('Error: Name is required.');
+    if (!name.length || !email.length || !message.length || !validateEmail(email)){
+          if (!name.length) { 
+            setErrorNameRequired('Error: Name is required.');
+          }
           if (!email.length) {
             setErrorEmailRequired('Error: Email is required.');
           } 
