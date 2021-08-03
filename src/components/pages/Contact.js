@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+//import reactDom from 'react-dom';
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -6,48 +7,49 @@ export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [errorEmailFormatMessage, setErrorEmailFormatMessage] = useState('');
-    const [errorEmailRequiredMessage, setErrorEmailRequiredMessage] = useState('');
-    const [errorNameRequiredMessage, setErrorNameRequiredMessage] = useState('');
-
-    const handleInputChange = (e) => {
-
-    const { name, value } = e.target;
-      if (name === "name"){
-        setName(value);
-      } else if  (name === "email"){
-        setEmail(value);
-      } else if (name === "message"){
-        setMessage(value);
-      }
-    };
+    const [errorEmailFormat, setErrorEmailFormat] = useState('');
+    const [errorEmailRequired, setErrorEmailRequired] = useState('');
+    const [errorNameRequired, setErrorNameRequired] = useState('');
+    const [errorMessageRequired, setErrorMessageRequired] = useState('');
 
     const resetErrorMessages = _ => {
-      setErrorEmailRequiredMessage('');
-      setErrorEmailFormatMessage('');
-      setErrorNameRequiredMessage('');
+      setErrorEmailRequired('');
+      setErrorEmailFormat('');
+      setErrorNameRequired('');
+      setErrorMessageRequired('');
     }
+
+    const handleInputChange = (e) => {
+      const { name, value } = e.target;
+        if (name === "name"){
+          setName(value);
+        } else if  (name === "email"){
+          setEmail(value);
+        } else if (name === "message"){
+          setMessage(value);
+        }
+    };
+
+
 
     const handleFormSubmit = (e) => {
     e.preventDefault();
     resetErrorMessages();
 
-    if (!email.length && !name.length) {
-        setErrorEmailRequiredMessage('Error: Email is required.');
-        setErrorNameRequiredMessage('Error: Name is required.');
-        return;
-    } else if (!email.length) {
-        setErrorEmailRequiredMessage('Error: Email is required.');
-        return;
-    } else if (!name.length && email.length && !validateEmail(email)) {
-       setErrorNameRequiredMessage('Error: Name is required.');
-       setErrorEmailFormatMessage('Error: Email format is incorrect.');
-      return;
-    } else if (email.length && !validateEmail(email)) {
-      setErrorEmailFormatMessage('Error: Email format is incorrect.');
+
+    if (!name.length) {
+        setErrorNameRequired('Error: Name is required.');
+          if (!email.length && !validateEmail(email)) {
+            setErrorNameRequired('Error: Email is required.');
+          } else if (email.length && !validateEmail(email)) {
+            setErrorEmailFormat('Error: Email format is incorrect.');
+          }
+          if (!message.length) {
+            setErrorMessageRequired('Error: Message is required.');
+          }   
       return;
     }
-
+   
     alert(`Contact has been sent.`);
     setName('');
     setEmail('');
@@ -71,9 +73,9 @@ export default function Contact() {
               placeholder="Enter your name" 
               className="form-control" 
               required />
-              {errorNameRequiredMessage && (
+              {errorNameRequired && (
                 <div>
-                  <p className="error">{errorNameRequiredMessage}</p>
+                  <p className="error">{errorNameRequired}</p>
                 </div>
               )}
             </div>
@@ -88,14 +90,14 @@ export default function Contact() {
               placeholder="Enter your email address" 
               className="form-control " 
               required />
-              {errorEmailRequiredMessage && (
+              {errorEmailRequired && (
                 <div>
-                  <p className="error">{errorEmailRequiredMessage}</p>
+                  <p className="error">{errorEmailRequired}</p>
                 </div>
               )}
-              {errorEmailFormatMessage && (
+              {errorEmailFormat && (
                 <div>
-                  <p className="error">{errorEmailFormatMessage}</p>
+                  <p className="error">{errorEmailFormat}</p>
                 </div>
               )}
             </div>
@@ -107,9 +109,11 @@ export default function Contact() {
               onChange={handleInputChange}
               className="form-control" 
               placeholder="Enter your message"></textarea>
-               <div class="invalid-feedback message">
-                  Error: Message is required information.
-              </div>
+               {errorMessageRequired && (
+                <div>
+                  <p className="error">{errorMessageRequired}</p>
+                </div>
+              )}
             </div>
             <div>
               <button className="btn" type="submit" onClick={handleFormSubmit}>Submit</button>
