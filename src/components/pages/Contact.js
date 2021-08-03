@@ -39,9 +39,10 @@ export default function Contact() {
 
     if (!name.length) {
         setErrorNameRequired('Error: Name is required.');
-          if (!email.length && !validateEmail(email)) {
-            setErrorNameRequired('Error: Email is required.');
-          } else if (email.length && !validateEmail(email)) {
+          if (!email.length) {
+            setErrorEmailRequired('Error: Email is required.');
+          } 
+          if (email.length && !validateEmail(email)) {
             setErrorEmailFormat('Error: Email format is incorrect.');
           }
           if (!message.length) {
