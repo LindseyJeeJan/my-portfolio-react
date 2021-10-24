@@ -86,7 +86,7 @@ export default function Portfolio() {
               <a href="https://workout-tracker-ll.herokuapp.com/" rel="noreferrer" target="_blank" className="arrow-link">View demo</a>
             </p>
               <a href="https://github.com/LindseyJeeJan/workout-tracker"  rel="noreferrer"target="_blank" className="img">
-              <img src={process.env.PUBLIC_URL + "/images/workout-track.png"} alt="workout tracker project" />
+              <img src={process.env.PUBLIC_URL + "/images/workout-tracker.png"} alt="workout tracker project" />
             </a>
           </div>
         </article>

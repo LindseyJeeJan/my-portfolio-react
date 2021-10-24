@@ -124,7 +124,6 @@ article a.arrow-link {
     max-width: 120px;
     font-weight: 400;
     text-align: center;
-    vertical-align: middle;
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -236,7 +235,6 @@ section {
 
 .article-content p {
     padding: 1% 20px 1% 0;
-    font-size: .75rem;
 }
 
 .articles, .contacts, .contacts div {
@@ -265,11 +263,12 @@ section {
 .contacts {
     justify-content: space-evenly;
     max-width: 325px;
+    flex-wrap: nowrap;
 }
 
 .contacts a.button {
-    flex: 1 0 calc(20% - 20px);
-    font-size: 1.1rem;
+    flex: 1 0 calc(20% - 28px);
+    font-size: 1.7rem;
     font-weight: 300;
     padding: 7px;
     border-radius: calc(.25rem - 1px);
@@ -320,6 +319,12 @@ p.copyright{
 .displayNone{
     display: none;
 }
+
+.fa-stack-overflow:before{
+    line-height: 1rem;
+    vertical-align: bottom;
+}
+
 /* Media queries */
 @media screen and (max-width: 767px) {
     .wrapper {

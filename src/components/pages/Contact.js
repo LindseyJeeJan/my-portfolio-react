@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-//import reactDom from 'react-dom';
-
 import { validateEmail } from '../../utils/helpers';
 
 export default function Contact() {
@@ -30,12 +28,9 @@ export default function Contact() {
         }
     };
 
-
-
     const handleFormSubmit = (e) => {
     e.preventDefault();
     resetErrorMessages();
-
 
     if (!name.length || !email.length || !message.length || !validateEmail(email)){
           if (!name.length) { 

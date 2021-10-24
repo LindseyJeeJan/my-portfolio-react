@@ -2,7 +2,7 @@
   [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
   ## Description
-  This is my professional portfolio. The page contains a brief message about who I am, and descriptions and links for several of my recent projects. The page also contains information to contact me.  React
+  This is my professional portfolio. This SPA single page application contains a brief message about who I am, and descriptions and links for several of my recent projects. The page also contains information to contact me.  The application is build on a MERN stack using MongoDB, Express, React and NodeJS.
 
   ## Table of Contents
   * [Usage](#usage)
@@ -13,7 +13,7 @@
 
 
   ## Usage
-
+[Deployed Application](https://lindseyjeejan.github.io/my-portfolio-react/)
 ![Desktop](public/images/desktop.png)
 ![Mobile](public/images/mobile.png)
 
