@@ -56,13 +56,14 @@ export default function Contact() {
   };
 
   return (
-      <div className="main container p-3">
+      <div id="content" className="main container p-3">
         <section>
           <h1>Contact</h1>
           <form>
             <div className="form-group">
-              <label>Name</label>
+              <label for="name">Name</label>
               <input 
+              id="name"
               name="name"
               value={name}
               onChange={handleInputChange}
@@ -78,9 +79,10 @@ export default function Contact() {
               )}
             </div>
             <div className="form-group">
-              <label>Email address</label> 
+              <label for="email">Email address</label> 
               <input 
               name="email"
+              id="email"
               value={email}
               onChange={handleInputChange}
               type="email" 
@@ -100,8 +102,9 @@ export default function Contact() {
               )}
             </div>
             <div className="form-group">
-              <label>Message</label>
-              <textarea 
+              <label for="message">Message</label>
+              <textarea
+              id="message" 
               name="message"
               value={message}
               onChange={handleInputChange}

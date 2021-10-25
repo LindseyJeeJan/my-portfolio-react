@@ -118,24 +118,31 @@ p {
 
 article a.arrow-link {
     margin-top: 15px;
-    color: var(--lighter);
+    color: var(--lightest);
+    background-color: var(--black);
+    border: 2px solid var(--black);
     display: block;
     max-width: 120px;
     font-weight: 400;
     text-align: center;
-    border: 2px solid var(--contrast);
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
+    border-radius: 25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     text-decoration: none;
 }
 
+button.btn {
+    border-radius: 25rem; 
+    padding: .375rem .75rem;
+}
+
 article a.arrow-link:hover{
     text-decoration: none;
-    color: var(--lightest);
-    background-color: var(--contrast);
+    background-color: transparent;
+    color: var(--lighter);
+    border: 2px solid var(--contrast);
 }
 
 form {
@@ -143,13 +150,15 @@ form {
 }
 
 form button.btn {
-    border: 2px solid var(--contrast);
-    color: var(--lighter);
+    border: 2px solid var(--black);
+    color: var(--lightest);
+    background-color: var(--black);
 }
 
 form button.btn:hover {
     color: var(--lightest);
-    background-color: var(--contrast);
+    background-color: transparent;
+    border: 2px solid var(--contrast);
 }
 
 a.img{
@@ -168,7 +177,7 @@ article img {
 
 ul li {
     line-height: 1.4rem;
-    margin-left: .4rem;
+    margin-left: 1.4rem;
 }
 /* Class selectors */
 .error {
@@ -193,7 +202,7 @@ ul li {
     bottom: 0;
 }
 
-.wrapper > div {
+#content {
     flex-grow: 2;
     overflow: auto;
 }
@@ -281,9 +290,10 @@ section {
     text-align: center;
 }
 
-.contacts a.button:hover {
+.contacts a.button:hover, .contacts a.button:focus {
     transition: all 0.3s ease-in-out;   
     text-decoration: none;
+    color: var(--lightest);
 }
 
 a.button, a.button span, a.button svg, a.button {
@@ -337,6 +347,22 @@ p.copyright{
 .fa-stack-overflow:before{
     line-height: 1rem;
     vertical-align: bottom;
+}
+
+.screenreader-text {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+.screenreader-text:focus {
+  color: black;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
 }
 
 /* Media queries */

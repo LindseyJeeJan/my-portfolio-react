@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Resume() {
   return (
-      <div className="main container p-3">
+      <div id="content" className="main container p-3">
         <section>
           <h1>Resume</h1>
          
