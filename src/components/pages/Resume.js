@@ -5,8 +5,7 @@ export default function Resume() {
       <div className="main container p-3">
         <section>
           <h1>Resume</h1>
-          <div>Download my  <a href={process.env.PUBLIC_URL + "/assets/lindseylauria-resume.pdf"} rel="noreferrer" target="_blank">resume</a>.</div>
-
+         
           <h3 className="mt-3">Front-end Skills</h3>
             <ul>
               <li>HTML5</li>
@@ -29,6 +28,8 @@ export default function Resume() {
               <li>REST</li>
               <li>GraphQL</li>
             </ul>
+
+             <div className="top-margin"><a href={process.env.PUBLIC_URL + "/assets/lindseylauria-resume.pdf"} rel="noreferrer" target="_blank">Download my resume</a></div>
         </section>
       </div>
    );

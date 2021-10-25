@@ -1,10 +1,11 @@
 :root {
---white: #f2e8cf;
---black: #386641;
+--white: #17252a;
+--black: #2b7178;
 --gray: #666;
---dark: #bc4749;
---lighter: #6a994e;
---contrast: #a7c957;
+--dark: #fff;
+--lighter: #2b7178;
+--contrast: #3aafa9;
+--lightest: #def2f1;
 }
 
 html {
@@ -18,7 +19,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
-  background-color: var(--white);
+  background-color: var(--lightest);
 }
 
 header {
@@ -31,11 +32,11 @@ header {
 }
 
 header {
-  background-image: linear-gradient(144deg, var(--lighter),var(--contrast)90%);
+  background-image: linear-gradient(144deg, var(--lighter),var(--white)90%);
 }
 
 footer {
-  background-image: linear-gradient(104deg, var(--contrast),var(--lighter)90%);
+  background-image: linear-gradient(104deg, var(--white),var(--white)90%);
 }
 
 header, nav ul, .article-content {
@@ -53,6 +54,7 @@ nav li {
     padding: 1%;
     justify-self: center;
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 nav ul {
@@ -64,11 +66,9 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2rem;    
-    color: var(--black);
-    font-family: 'Righteous', cursive;
+    font-size: 1.8rem;    
+    color: var(--white);
     margin-bottom: 1rem;
-    text-transform: uppercase;
 }
 
 h2 {
@@ -81,8 +81,7 @@ h2 {
 
 h3 {
     font-size: 1.1rem;
-    text-transform: uppercase;
-    color: var(--lighter);
+    color: var(--black);
 }
 
 header a {
@@ -91,12 +90,13 @@ header a {
 
 a, a:hover, a:active, a:focus, a:visited {
     cursor: pointer;
-    color: var(--dark);
+    color: var(--contrast);
+    text-decoration: underline;
 }
 
 a:hover, a:active, a:focus {
     transition: all 0.3s ease-in;
-    color: var(--black);
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -113,37 +113,43 @@ main .decorative-border:last-child {
 
 p {
     line-height: 1.6;
-    color: var(--black);
+    color: var(--white);
 }
 
 article a.arrow-link {
     margin-top: 15px;
-    background-color: var(--dark);
-    color: var(--white);
+    color: var(--lighter);
     display: block;
     max-width: 120px;
     font-weight: 400;
     text-align: center;
-    border: 1px solid transparent;
+    border: 2px solid var(--contrast);
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-decoration: none;
+}
+
+article a.arrow-link:hover{
+    text-decoration: none;
+    color: var(--lightest);
+    background-color: var(--contrast);
 }
 
 form {
-    padding: 0 5%;
+    padding: 2% 1%;
 }
 
 form button.btn {
-    background-color: var(--dark);
-    color: var(--white);
+    border: 2px solid var(--contrast);
+    color: var(--lighter);
 }
 
 form button.btn:hover {
-    background-color: var(--lighter);
-    color: var(--white);
+    color: var(--lightest);
+    background-color: var(--contrast);
 }
 
 a.img{
@@ -163,7 +169,6 @@ article img {
 ul li {
     line-height: 1.4rem;
     margin-left: .4rem;
-    color: var(--black)
 }
 /* Class selectors */
 .error {
@@ -194,7 +199,7 @@ ul li {
 }
 
 .nav-tabs .nav-item .nav-link {
-  color: var(--black);
+  color: var(--contrast);
   border-bottom: 2px solid transparent;
   padding: .5rem;
 }
@@ -304,15 +309,19 @@ a.button, a.button span, a.button svg, a.button {
     clear: left;
 }
 
+.top-margin {
+    margin-top: 15px;
+}
+
 p.copyright{
     margin: 0;
     font-size: .75rem;
-    color: var(--white);
+    color: var(--lightest);
 }
 
 .brand {
     margin-left: 1.5rem;
-    color: var(--white);    
+    color: var(--lightest);    
     font-weight: bold;
     font-size: 1.1rem;
 }
