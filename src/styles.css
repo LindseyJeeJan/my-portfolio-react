@@ -298,6 +298,11 @@ a.button, a.button span, a.button svg, a.button {
     margin-right: 0;
 }
 
+.contacts a.button:hover, svg:hover, .svg svg:hover, .svg path:hover{
+    color: var(--lightest);
+    cursor: pointer;
+}
+
 .contacts a.button span, .contacts a.button svg{
     vertical-align: middle;
     display: inline-block;
