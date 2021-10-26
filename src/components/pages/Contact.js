@@ -89,15 +89,16 @@ export default function Contact() {
               autoComplete="off" 
               placeholder="Enter your email address" 
               className="form-control " 
-              required />
+              required
+              aria-describedby="errorEmailRequired" />
               {errorEmailRequired && (
                 <div>
-                  <p className="error">{errorEmailRequired}</p>
+                  <p id="errorEmailRequired" role="alert" className="error">{errorEmailRequired}</p>
                 </div>
               )}
               {errorEmailFormat && (
                 <div>
-                  <p className="error">{errorEmailFormat}</p>
+                  <p id="errorEmailFormat" role="alert" className="error">{errorEmailFormat}</p>
                 </div>
               )}
             </div>
@@ -112,7 +113,7 @@ export default function Contact() {
               placeholder="Enter your message"></textarea>
                {errorMessageRequired && (
                 <div>
-                  <p className="error">{errorMessageRequired}</p>
+                  <p id="errorMessageRequired" role="alert" className="error">{errorMessageRequired}</p>
                 </div>
               )}
             </div>
