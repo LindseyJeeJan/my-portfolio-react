@@ -6,7 +6,7 @@ export default function Resume() {
         <section>
           <h1>Resume</h1>
          
-          <h3 className="mt-3">Front-end Skills</h3>
+          <h2 className="mt-3">Front-end Skills</h2>
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
@@ -16,7 +16,7 @@ export default function Resume() {
               <li>Accessibility</li>
               <li>Responsive Design</li>
             </ul>
-          <h3 className="mt-3">Back-end Skills</h3>
+          <h2 className="mt-3">Back-end Skills</h2>
             <ul>
               <li>APIs</li>
               <li>Node</li>

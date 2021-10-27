@@ -8,7 +8,7 @@ export default function Portfolio() {
       <div className="articles">
         <article>
           <div className="d-flex align-content-center justify-content-between">
-            <h3>Favor Trader</h3>
+            <h2>Favor Trader</h2>
             <a href="https://github.com/LindseyJeeJan/Favor-Trader" rel="noreferrer" target="_blank">Visit GitHub</a>
           </div>
           <div className="article-content">
@@ -22,7 +22,7 @@ export default function Portfolio() {
         </article>
         <article>
           <div className="d-flex align-content-center justify-content-between">
-            <h3>Weather Dashboard</h3>
+            <h2>Weather Dashboard</h2>
             <a href="https://github.com/LindseyJeeJan/weather-dashboard" rel="noreferrer" target="_blank">Visit GitHub</a>
           </div>
           <div className="article-content">
@@ -36,7 +36,7 @@ export default function Portfolio() {
         </article>
         <article>
           <div className="d-flex align-content-center justify-content-between">
-            <h3>Study Buddy</h3>
+            <h2>Study Buddy</h2>
             <a href="https://github.com/LindseyJeeJan/project-one" rel="noreferrer" target="_blank">Visit GitHub</a>
           </div>
           <div className="article-content">
@@ -50,7 +50,7 @@ export default function Portfolio() {
         </article>
          <article>
           <div className="d-flex align-content-center justify-content-between">
-            <h3>Tech Blog</h3>
+            <h2>Tech Blog</h2>
             <a href="https://github.com/LindseyJeeJan/tech-blog" rel="noreferrer" target="_blank">Visit GitHub</a>
           </div>
           <div className="article-content">
@@ -64,7 +64,7 @@ export default function Portfolio() {
         </article>
         <article>
           <div className="d-flex align-content-center justify-content-between">
-            <h3>Budget Tracker</h3>
+            <h2>Budget Tracker</h2>
             <a href="https://github.com/LindseyJeeJan/budget-tracker" rel="noreferrer" target="_blank">Visit GitHub</a>
           </div>
           <div className="article-content">
@@ -78,7 +78,7 @@ export default function Portfolio() {
         </article>
          <article>
           <div className="d-flex align-content-center justify-content-between">
-            <h3>Workout Tracker</h3>
+            <h2>Workout Tracker</h2>
             <a href="https://github.com/LindseyJeeJan/workout-tracker" rel="noreferrer" target="_blank">Visit GitHub</a>
           </div>
           <div className="article-content">
