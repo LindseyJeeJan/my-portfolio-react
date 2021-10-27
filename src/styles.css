@@ -100,6 +100,11 @@ a:hover, a:active, a:focus {
     cursor: pointer;
 }
 
+.articles a:focus {
+    outline: 2px solid var(--black);
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
 footer {
     font-size: .9rem;
     margin-top: 2%;
@@ -221,7 +226,7 @@ ul li {
 }
 
 .navbar .nav-tabs .nav-link.active, .navbar .nav-tabs .nav-link:hover{
-  border-bottom: 2px solid var(--dark);
+  border-bottom: 2px solid var(--contrast);
   white-space: nowrap;
 }
 

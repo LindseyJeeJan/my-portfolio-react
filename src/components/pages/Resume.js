@@ -13,9 +13,8 @@ export default function Resume() {
               <li>JavaScript</li>
               <li>JQuery</li>
               <li>React</li>
-              <li>Responsive Design</li>
-              <li>Bootstrap</li>
               <li>Accessibility</li>
+              <li>Responsive Design</li>
             </ul>
           <h3 className="mt-3">Back-end Skills</h3>
             <ul>
@@ -29,7 +28,7 @@ export default function Resume() {
               <li>GraphQL</li>
             </ul>
 
-             <div className="top-margin"><a href={process.env.PUBLIC_URL + "/assets/lindseylauria-resume.pdf"} rel="noreferrer" target="_blank">Download my resume</a></div>
+             <div className="top-margin"><a href={process.env.PUBLIC_URL + "/assets/lindseylauria-resume.pdf"} rel="noreferrer" target="_blank">Download my resume &ndash; PDF <i class="fas fa-file-pdf"></i></a></div>
         </section>
       </div>
    );
