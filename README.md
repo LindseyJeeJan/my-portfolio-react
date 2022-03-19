@@ -13,7 +13,8 @@
 
 
   ## Usage
-[Deployed Application](https://lindseyjeejan.github.io/my-portfolio-react/)
+[View Deployed Application](https://lindseyjeejan.github.io/my-portfolio-react/)
+
 ![Desktop](public/images/desktop.png)
 ![Mobile](public/images/mobile.png)
 

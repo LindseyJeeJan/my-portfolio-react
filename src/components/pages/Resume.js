@@ -10,8 +10,9 @@ export default function Resume() {
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
+              <li>SASS</li>
               <li>JavaScript</li>
-              <li>JQuery</li>
+              <li>Vue.js</li>
               <li>React</li>
               <li>Accessibility</li>
               <li>Responsive Design</li>
