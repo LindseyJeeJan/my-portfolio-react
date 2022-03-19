@@ -42,7 +42,7 @@ export default function Footer() {
         </a>
       </article>
     <p className="copyright">
-      &copy; 2021 Lindsey Lauria
+      &copy; 2022 Lindsey Lauria
     </p>
 </footer>
    );

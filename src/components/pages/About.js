@@ -9,8 +9,8 @@ export default function About() {
            
             <div className="article-content">
               <div>
-                <h2 className="w-100">Web Designer &amp; Developer</h2>
-                <p>Hi, I'm Lindsey. I am a front end developer and a UI designer. Designing user interfaces and building clean, accessible front end solutions is something I love to do. I enjoy creative activities, problem solving and learning new things.</p>
+                <h2 className="w-100">Front End Designer &amp; Developer</h2>
+                <p>Hi, I'm Lindsey. I am a Web Developer and a UI Designer. Designing user interfaces and building clean, accessible front end solutions is something I love to do. I enjoy creative activities, problem solving and learning new things.</p>
               </div>
               <img src={process.env.PUBLIC_URL + "/images/lindsey-resized.png"} alt="lindsey lauria headshot" />
             </div>
