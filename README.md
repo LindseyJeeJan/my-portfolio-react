@@ -8,6 +8,7 @@
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributing)
+  * [Technologies](#technologies)
   * [Tests](#tests)
   * [Questions](#questions)
 
@@ -15,8 +16,14 @@
   ## Usage
 [View Deployed Application](https://lindseyjeejan.github.io/my-portfolio-react/)
 
-![Desktop](public/images/desktop.png)
-![Mobile](public/images/mobile.png)
+  To begin, install dependencies by running
+  ```
+  yarn install 
+  ```
+  Start the application using 
+  ```
+yarn start
+```
 
   ## License
   Licensed under [GNU AGPLv3](https://spdx.org/licenses/AGPL-3.0-or-later.html).
@@ -24,6 +31,13 @@
   ## Contributing
   
   If you are interested in fixing issues and contributing to this project, please refer to the [Contributor Covenant](https://www.contributor-covenant.org/).
+
+  ## Technologies
+  The application includes
+    [ESLint](https://eslint.org/)
+  [Prettier](https://prettier.io/)
+  [React](https://reactjs.org/)
+    [Yarn](https://yarnpkg.com/)
 
   ## Tests
   

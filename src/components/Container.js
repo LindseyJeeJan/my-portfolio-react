@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Nav from './Nav';
 import Footer from './Footer';
 import About from './pages/About';
@@ -16,14 +16,13 @@ export default function PortfolioContainer() {
     }
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
-    }  
-    if (currentPage === 'Contact'){
+    }
+    if (currentPage === 'Contact') {
       return <Contact />;
-    } 
-    if (currentPage === 'Resume'){
+    }
+    if (currentPage === 'Resume') {
       return <Resume />;
     }
-   
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
