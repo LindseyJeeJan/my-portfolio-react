@@ -39,4 +39,4 @@ yarn start
   * [Yarn](https://yarnpkg.com/)
 
   ## Questions
-  For more information about me and my other projects, visit my [GitHub profile](https://github.com/LindseyJeeJan). Reach me to report issues or with questions at [ljjlauria@mac.com](mailto:ljjlauria@mac.com).
+  For more information about me and my other projects, visit my [GitHub profile](https://github.com/LindseyJeeJan).
