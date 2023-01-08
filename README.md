@@ -9,7 +9,6 @@
   * [License](#license)
   * [Contributing](#contributing)
   * [Technologies](#technologies)
-  * [Tests](#tests)
   * [Questions](#questions)
 
 
@@ -34,14 +33,10 @@ yarn start
 
   ## Technologies
   The application includes
-    [ESLint](https://eslint.org/)
-  [Prettier](https://prettier.io/)
-  [React](https://reactjs.org/)
-    [Yarn](https://yarnpkg.com/)
-
-  ## Tests
-  
-  If you would like to contribute and help us by writing tests, see the [Contributing](#contributing) section.
+  * [ESLint](https://eslint.org/)
+  * [Prettier](https://prettier.io/)
+  * [React](https://reactjs.org/)
+  * [Yarn](https://yarnpkg.com/)
 
   ## Questions
   For more information about me and my other projects, visit my [GitHub profile](https://github.com/LindseyJeeJan). Reach me to report issues or with questions at [ljjlauria@mac.com](mailto:ljjlauria@mac.com).
