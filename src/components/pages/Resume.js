@@ -10,7 +10,7 @@ export default function Resume() {
             Accessibility
             <ul>
               <li>ARIA</li>
-              <li>WCAG 2.2</li>
+              <li>WCAG</li>
             </ul>
           </li>
           <li>CSS</li>
