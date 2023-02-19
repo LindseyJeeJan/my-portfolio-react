@@ -47,7 +47,7 @@ export default function Footer() {
           <i className="fab fa-stack-overflow"></i>
         </a>
       </article>
-      <p className="copyright">&copy; 2022 Lindsey Lauria</p>
+      <p className="copyright">&copy; 2023 Lindsey Lauria</p>
     </footer>
   );
 }
