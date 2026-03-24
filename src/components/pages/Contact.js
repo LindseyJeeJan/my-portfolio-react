@@ -116,8 +116,7 @@ export default function Contact() {
               value={message}
               onChange={handleInputChange}
               className="form-control"
-              placeholder="Enter your message"
-            ></textarea>
+              placeholder="Enter your message"></textarea>
             {errorMessageRequired && (
               <div>
                 <p id="errorMessageRequired" role="alert" className="error">
