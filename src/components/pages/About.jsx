@@ -6,7 +6,7 @@ export default function About() {
         <article className="about-content">
           <div className="article-content">
             <div>
-              <h2 className="w-100">Senior Developer &amp; Designer</h2>
+              <h2 className="w-100">Software Developer &amp; Designer</h2>
               <p>
                 Hi, I&apos;m Lindsey. I am a developer with a strong background in both design and
                 development of responsive and accessible user interfaces for web applications. My
