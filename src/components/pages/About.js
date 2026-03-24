@@ -6,12 +6,12 @@ export default function About() {
         <article className="about-content">
           <div className="article-content">
             <div>
-              <h2 className="w-100">Front-End Developer &amp; Designer</h2>
+              <h2 className="w-100">Senior Developer &amp; Designer</h2>
               <p>
-                Hi, I&apos;m Lindsey. I am a Front-end Software Engineer with a strong background in
-                both design and development of responsive and accessible user interfaces for web
-                applications. My goal is always to provide the best experience to the largest
-                possible number of users.
+                Hi, I&apos;m Lindsey. I am a developer with a strong background in both design and
+                development of responsive and accessible user interfaces for web applications. My
+                goal is always to provide the best experience to the largest possible number of
+                users.
               </p>
               <p>
                 I enjoy creating accessible interfaces that are inclusively designed to provide an

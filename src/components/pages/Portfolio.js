@@ -10,7 +10,8 @@ export default function Portfolio() {
               <a
                 href="https://github.com/LindseyJeeJan/Favor-Trader"
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+              >
                 Visit GitHub
               </a>
             </div>
@@ -26,7 +27,8 @@ export default function Portfolio() {
                   href="https://favortrader-ll.herokuapp.com/"
                   rel="noreferrer"
                   target="_blank"
-                  className="arrow-link">
+                  className="arrow-link"
+                >
                   View demo
                 </a>
               </p>
@@ -34,7 +36,8 @@ export default function Portfolio() {
                 href="https://github.com/LindseyJeeJan/Favor-Trader"
                 rel="noreferrer"
                 target="_blank"
-                className="img">
+                className="img"
+              >
                 <img
                   src={process.env.PUBLIC_URL + '/images/favor-trader.png'}
                   alt="favor trader project"
@@ -48,7 +51,8 @@ export default function Portfolio() {
               <a
                 href="https://github.com/LindseyJeeJan/weather-dashboard"
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+              >
                 Visit GitHub
               </a>
             </div>
@@ -63,7 +67,8 @@ export default function Portfolio() {
                   href="https://lindseyjeejan.github.io/weather-dashboard/"
                   rel="noreferrer"
                   target="_blank"
-                  className="arrow-link">
+                  className="arrow-link"
+                >
                   View demo
                 </a>
               </p>
@@ -71,7 +76,8 @@ export default function Portfolio() {
                 href="https://github.com/LindseyJeeJan/weather-dashboard"
                 rel="noreferrer"
                 target="_blank"
-                className="img">
+                className="img"
+              >
                 <img
                   src={process.env.PUBLIC_URL + '/images/weather-dashboard.png'}
                   alt="weather dashboard project"
@@ -85,7 +91,8 @@ export default function Portfolio() {
               <a
                 href="https://github.com/LindseyJeeJan/project-one"
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+              >
                 Visit GitHub
               </a>
             </div>
@@ -101,7 +108,8 @@ export default function Portfolio() {
                   href="https://github.com/LindseyJeeJan/project-one"
                   rel="noreferrer"
                   target="_blank"
-                  className="arrow-link">
+                  className="arrow-link"
+                >
                   View demo
                 </a>
               </p>
@@ -109,7 +117,8 @@ export default function Portfolio() {
                 href="https://github.com/LindseyJeeJan/project-one"
                 rel="noreferrer"
                 target="_blank"
-                className="img">
+                className="img"
+              >
                 <img
                   src={process.env.PUBLIC_URL + '/images/study-buddy.png'}
                   alt="study buddy project"
@@ -134,7 +143,8 @@ export default function Portfolio() {
                   href="https://techtalk-tech-blog.herokuapp.com/"
                   rel="noreferrer"
                   target="_blank"
-                  className="arrow-link">
+                  className="arrow-link"
+                >
                   View demo
                 </a>
               </p>
@@ -142,7 +152,8 @@ export default function Portfolio() {
                 href="https://github.com/LindseyJeeJan/tech-blog"
                 rel="noreferrer"
                 target="_blank"
-                className="img">
+                className="img"
+              >
                 <img
                   src={process.env.PUBLIC_URL + '/images/tech-blog.png'}
                   alt="tech blog project"
@@ -156,7 +167,8 @@ export default function Portfolio() {
               <a
                 href="https://github.com/LindseyJeeJan/budget-tracker"
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+              >
                 Visit GitHub
               </a>
             </div>
@@ -171,7 +183,8 @@ export default function Portfolio() {
                   href="https://budget-tracker-ll.herokuapp.com/"
                   rel="noreferrer"
                   target="_blank"
-                  className="arrow-link">
+                  className="arrow-link"
+                >
                   View demo
                 </a>
               </p>
@@ -179,7 +192,8 @@ export default function Portfolio() {
                 href="https://github.com/LindseyJeeJan/budget-tracker"
                 rel="noreferrer"
                 target="_blank"
-                className="img">
+                className="img"
+              >
                 <img
                   src={process.env.PUBLIC_URL + '/images/budget-tracker.png'}
                   alt="budget tracker project"
@@ -193,7 +207,8 @@ export default function Portfolio() {
               <a
                 href="https://github.com/LindseyJeeJan/workout-tracker"
                 rel="noreferrer"
-                target="_blank">
+                target="_blank"
+              >
                 Visit GitHub
               </a>
             </div>
@@ -209,7 +224,8 @@ export default function Portfolio() {
                   href="https://workout-tracker-ll.herokuapp.com/"
                   rel="noreferrer"
                   target="_blank"
-                  className="arrow-link">
+                  className="arrow-link"
+                >
                   View demo
                 </a>
               </p>
@@ -217,7 +233,8 @@ export default function Portfolio() {
                 href="https://github.com/LindseyJeeJan/workout-tracker"
                 rel="noreferrer"
                 target="_blank"
-                className="img">
+                className="img"
+              >
                 <img
                   src={process.env.PUBLIC_URL + '/images/workout-tracker.png'}
                   alt="workout tracker project"

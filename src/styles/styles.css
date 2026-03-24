@@ -299,13 +299,14 @@ section {
 }
 
 .contacts {
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
   max-width: 325px;
   flex-wrap: nowrap;
 }
 
 .contacts a.button {
-  flex: 1 0 calc(20% - 28px);
+  flex: 0 0 auto;
   font-size: 1.7rem;
   font-weight: 300;
   padding: 7px;
@@ -407,6 +408,41 @@ p.copyright {
     flex: 0 0 50%;
   }
 }
+.resume-section {
+  margin-bottom: 2rem;
+}
+
+.resume-section h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.resume-section h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.resume-job {
+  margin-bottom: 1.5rem;
+}
+
+.resume-job-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume-job-header h3 {
+  margin: 0;
+}
+
+.resume-job-meta {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
 /* Media queries */
 @media screen and (max-width: 767px) {
   .wrapper {
