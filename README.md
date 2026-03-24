@@ -4,7 +4,7 @@
 
 ## Description
 
-This is my professional portfolio. This SPA single page application contains a brief message about who I am, and descriptions and links for several of my recent projects. The page also contains information to contact me. The application is built with React and NodeJS.
+This is my professional portfolio. This SPA single page application contains a brief message about who I am, and descriptions and links for several of my recent projects. The page also contains information to contact me. The application is built with React, TypeScript, and Vite.
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ yarn install
 Start the application using
 
 ```
-yarn start
+yarn serve
 ```
 
 ## License
@@ -45,6 +45,8 @@ The application includes
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
 - [Yarn](https://yarnpkg.com/)
 
 ## Questions
