@@ -1,32 +1,45 @@
 export default function About() {
   return (
-    <div id="content" className="main container p-3">
-      <section>
-        <h1>About Me</h1>
-        <article className="about-content">
-          <div className="article-content">
-            <div>
-              <h2 className="w-100">Software Developer &amp; Designer</h2>
-              <p>
-                Hi, I&apos;m Lindsey. I am a developer with a strong background in both design and
-                development of responsive and accessible user interfaces for web applications. My
-                goal is always to provide the best experience to the largest possible number of
-                users.
-              </p>
-              <p>
-                I enjoy creating accessible interfaces that are inclusively designed to provide an
-                equal experience for all users. I have been developing with accessiblity in mind for
-                over a decade and I enjoy learning as much as possible about supporting various
-                assitive technologies. I consider myself both a designer and engineer.
-              </p>
-              <p></p>
-            </div>
-            <img
-              src={`${import.meta.env.BASE_URL}images/lindsey-resized.png`}
-              alt="lindsey lauria headshot"
-            />
-          </div>
-        </article>
+    <div id="content">
+      <section className="hero-section" aria-label="Introduction">
+        <img
+          src={`${import.meta.env.BASE_URL}images/lindsey-resized.png`}
+          alt="Lindsey Lauria"
+          className="hero-photo"
+        />
+        <div className="hero-overlay" aria-hidden="true" />
+        <div className="hero-glow" aria-hidden="true" />
+
+        <div className="hero-content">
+          <p className="hero-eyebrow">Senior Software Engineer · Designer</p>
+          <h1 className="hero-name">
+            Lindsey<br />Lauria
+          </h1>
+          <div className="hero-rule" aria-hidden="true" />
+        </div>
+
+        <div className="hero-scroll" aria-hidden="true">
+          <span className="hero-scroll-label">Scroll</span>
+          <span className="hero-scroll-line" />
+        </div>
+      </section>
+
+      <section className="bio-section">
+        <div className="bio-container">
+          <h2 className="bio-subhead">Software Developer &amp; Designer</h2>
+          <p>
+            Hi, I&apos;m Lindsey. I am a developer with a strong background in both design and
+            development of responsive and accessible user interfaces for web applications. My
+            goal is always to provide the best experience to the largest possible number of
+            users.
+          </p>
+          <p>
+            I enjoy creating accessible interfaces that are inclusively designed to provide an
+            equal experience for all users. I have been developing with accessibility in mind for
+            over a decade and I enjoy learning as much as possible about supporting various
+            assistive technologies. I consider myself both a designer and engineer.
+          </p>
+        </div>
       </section>
     </div>
   );

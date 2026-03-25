@@ -8,6 +8,10 @@
 # vite
 .vite/
 
+# superpowers
+.superpowers/
+/docs/superpowers/
+
 # misc
 .DS_Store
 .env.local
