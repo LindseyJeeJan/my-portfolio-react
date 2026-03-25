@@ -2,12 +2,6 @@ export default function About() {
   return (
     <div id="content">
       <section className="hero-section" aria-label="Introduction">
-        <img
-          src={`${import.meta.env.BASE_URL}images/lindsey-resized.png`}
-          alt="Lindsey Lauria"
-          className="hero-photo"
-        />
-        <div className="hero-overlay" aria-hidden="true" />
         <div className="hero-glow" aria-hidden="true" />
 
         <div className="hero-content">
