@@ -1,21 +1,13 @@
 export default function About() {
   return (
     <div id="content">
-      <section className="hero-section" aria-label="Introduction">
+      <section className="page-header" aria-label="Introduction">
         <div className="hero-glow" aria-hidden="true" />
-
-        <div className="hero-content">
-          <p className="hero-eyebrow">Senior Software Engineer · Designer</p>
-          <h1 className="hero-name">
-            Lindsey<br />Lauria
-          </h1>
-          <div className="hero-rule" aria-hidden="true" />
-        </div>
-
-        <div className="hero-scroll" aria-hidden="true">
-          <span className="hero-scroll-label">Scroll</span>
-          <span className="hero-scroll-line" />
-        </div>
+        <p className="hero-eyebrow">Senior Software Engineer · Designer</p>
+        <h1 className="hero-name">
+          Lindsey<br />Lauria
+        </h1>
+        <div className="hero-rule" aria-hidden="true" />
       </section>
 
       <section className="bio-section">

@@ -349,6 +349,33 @@ nav li {
   animation: scrollPulse 2.8s ease-in-out infinite 1.6s;
 }
 
+/* ─── Page Header (compact hero) ───────────────────────── */
+
+.page-header {
+  position: relative;
+  padding: 4rem clamp(1.5rem, 5vw, 4rem) 3rem;
+  overflow: hidden;
+  animation: heroFadeIn 1.4s ease forwards;
+}
+
+.page-header .hero-eyebrow {
+  position: static;
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards 0.55s;
+  margin-bottom: 0.9rem;
+}
+
+.page-header .hero-name {
+  position: static;
+  opacity: 0;
+  animation: fadeUp 0.85s ease forwards 0.75s;
+}
+
+.page-header .hero-rule {
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards 1.1s;
+}
+
 /* ─── Bio ───────────────────────────────────────────────── */
 
 .bio-section {
@@ -872,8 +899,12 @@ p.copyright {
     display: none;
   }
 
+  .page-header {
+    padding: 2.5rem 1.25rem 2rem;
+  }
+
   .bio-section {
-    padding: 3.5rem 1.25rem 3rem;
+    padding: 2rem 1.25rem 3rem;
   }
 
   .main.container {
