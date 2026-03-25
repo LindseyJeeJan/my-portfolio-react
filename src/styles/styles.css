@@ -13,18 +13,35 @@
 /* ─── Animations ────────────────────────────────────────── */
 
 @keyframes heroFadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(18px); }
-  to   { opacity: 1; transform: translateY(0);    }
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes scrollPulse {
-  0%,  100% { transform: scaleY(1);   opacity: 0.35; }
-  50%        { transform: scaleY(1.5); opacity: 0.75; }
+  0%,
+  100% {
+    transform: scaleY(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scaleY(1.5);
+    opacity: 0.75;
+  }
 }
 
 /* ─── Base ─────────────────────────────────────────────── */
@@ -254,8 +271,7 @@ nav li {
 .hero-glow {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse at 62% 38%, rgba(196, 133, 90, 0.22) 0%, transparent 52%),
+  background: radial-gradient(ellipse at 62% 38%, rgba(196, 133, 90, 0.22) 0%, transparent 52%),
     radial-gradient(ellipse at 22% 72%, rgba(196, 133, 90, 0.08) 0%, transparent 45%);
   z-index: 1;
 }
@@ -467,11 +483,7 @@ article a.arrow-link:hover {
   left: -3rem;
   right: -3rem;
   height: calc(100% + 2.5rem);
-  background: radial-gradient(
-    ellipse at 55% 20%,
-    rgba(196, 133, 90, 0.11) 0%,
-    transparent 55%
-  );
+  background: radial-gradient(ellipse at 55% 20%, rgba(196, 133, 90, 0.11) 0%, transparent 55%);
   pointer-events: none;
   z-index: 0;
 }
@@ -518,7 +530,6 @@ article a.arrow-link:hover {
   margin-bottom: 0;
   padding-bottom: 2.5rem;
   padding-top: 2.5rem;
-  border-bottom: 1px solid var(--border);
 }
 
 .resume-section:first-of-type {
@@ -746,11 +757,7 @@ footer::before {
   transform: translateX(-50%);
   width: 80%;
   height: 100%;
-  background: radial-gradient(
-    ellipse at 50% 0%,
-    rgba(196, 133, 90, 0.07) 0%,
-    transparent 65%
-  );
+  background: radial-gradient(ellipse at 50% 0%, rgba(196, 133, 90, 0.07) 0%, transparent 65%);
   pointer-events: none;
 }
 
