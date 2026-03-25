@@ -1,5 +1,7 @@
 # My Portfolio Built with React
 
+[View Deployed Application](https://lindseyjeejan.github.io/my-portfolio-react/)
+
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 ## Description
@@ -16,7 +18,6 @@ This is my professional portfolio. This SPA single page application contains a b
 
 ## Usage
 
-[View Deployed Application](https://lindseyjeejan.github.io/my-portfolio-react/)
 
 To begin, install dependencies by running
 
